@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+
+        <div class="container__input">
+            <input type="text" id="input-task" placeholder="Ingrese una tarea">
+            <button onclick="addTask()">Agregar Tarea</button>
+        </div>
+
+        <table>
+            <caption>Tareas</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Descripción</th>
+                    <th>Completado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-tasks">
+                <!-- Las tareas se agregarán aquí -->
+            </tbody>
+        </table>
+
+        <div class="container__display">
+            <div>
+                <p>Total de Tareas: <span id="total-tasks">0</span></p>
+                <p>Tareas Realizadas: <span id="completed-tasks">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script01.js"></script>
+</body>
+</html>
